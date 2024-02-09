@@ -1,0 +1,171 @@
+.App {
+  text-align: center;
+}
+
+/* Navbar container */
+.navbar {
+  background-color: #c3ffc1;
+  /* Dark background color */
+  overflow: hidden;
+  /* Ensure contents don't overflow */
+  display: flex;
+  /* Use flexbox layout */
+  justify-content: space-between;
+  /* Space elements evenly along the main axis */
+  align-items: center;
+  /* Align items vertically in the center */
+  font-weight: 700;
+  font-size: 20px;
+  height: 80px;
+}
+
+/* Navbar links */
+.navbar a {
+  color: #000000;
+  /* Text color */
+  text-decoration: none;
+  /* Remove underline from links */
+  padding: 25px 31px;
+  /* Padding for links */
+  transition: background-color 0.3s, color 0.3s;
+  /* Smooth transition for hover effects */
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #acc9bb;
+  /* Light background color on hover */
+  color: rgb(4, 4, 3);
+  /* Change text color on hover */
+}
+
+/* Active link */
+.navbar a.active {
+  background-color: #000000;
+  /* Darker background color for active link */
+  color: white;
+  /* White text color for active link */
+}
+
+/* Login and Signup links */
+.login-navbar {
+  margin-left: 10px;
+  /* Add some space between the links */
+}
+
+.other-item {
+  float: left;
+}
+
+/* Ligin page
+
+
+
+/* Style the input fields */
+input[type="text"],
+input[type="password"] {
+  width: 50%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+  width: 200px;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #92eb95;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Style the input fields on focus */
+input[type="text"]:focus,
+input[type="password"]:focus {
+  outline: none;
+  border-color: #4caf50;
+  box-shadow: 0 0 5px #4caf50;
+}
+
+form {
+  padding: 20% 10% 20% 10%;
+}
+
+.form-container {
+  position: absolute;
+  width: 600px;
+  margin: 0 auto;
+  padding: 0px;
+  background-color: #d1f3c8;
+  border-radius: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*slider */
+
+.automaticSlider {
+  width: 91.5%;
+  height: 400px;
+  /* Adjust height as needed */
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+  position: relative;
+  padding: 20px;
+}
+
+.automaticSlider img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  transition: transform 0.5s ease;
+  animation: slideImage 1s forwards;
+  /* Animation effect */
+  border-radius: 10px;
+
+  /* Smooth transition */
+  transition: transform 0.5s ease;
+  /* Smooth transition */
+}
+
+@keyframes slideImage {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+}
+
+.animate-slide {
+  transform: translateX(-100%);
+  /* Move image to the left */
+}
+
+/* home cards   */
+
+.home-cards{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+
+}
+
+.home-cards img {
+  height: 200px;
+  width: 250px;
+  overflow: hidden;
+  object-fit: fill;
+  border-radius: 10px;
+}
