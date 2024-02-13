@@ -4,7 +4,7 @@
 
 /* Navbar container */
 .navbar {
-  background-color: #c3ffc1;
+  background-color: #484848;
   /* Dark background color */
   overflow: hidden;
   /* Ensure contents don't overflow */
@@ -21,7 +21,7 @@
 
 /* Navbar links */
 .navbar a {
-  color: #000000;
+  color: #f2f2f2;
   /* Text color */
   text-decoration: none;
   /* Remove underline from links */
@@ -33,7 +33,7 @@
 
 /* Change color on hover */
 .navbar a:hover {
-  background-color: #acc9bb;
+  background-color: #919191;
   /* Light background color on hover */
   color: rgb(4, 4, 3);
   /* Change text color on hover */
@@ -41,7 +41,7 @@
 
 /* Active link */
 .navbar a.active {
-  background-color: #000000;
+  background-color: #d6d6d6;
   /* Darker background color for active link */
   color: white;
   /* White text color for active link */
@@ -105,7 +105,7 @@ form {
   width: 600px;
   margin: 0 auto;
   padding: 0px;
-  background-color: #d1f3c8;
+  background-color: #e6ffe9;
   border-radius: 20px;
   top: 50%;
   left: 50%;
@@ -115,7 +115,7 @@ form {
 /*slider */
 
 .automaticSlider {
-  width: 91.5%;
+  width: 99%;
   height: 400px;
   /* Adjust height as needed */
   overflow: hidden;
@@ -156,10 +156,22 @@ form {
 
 /* home cards   */
 
-.home-cards{
+.home-cards {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
 
+}
+
+.cardDiv {
+  border-radius: 20px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 40px;
+
+}
+
+.cardDiv:hover {
+  transform: scale(1.05);
 }
 
 .home-cards img {
@@ -168,4 +180,58 @@ form {
   overflow: hidden;
   object-fit: fill;
   border-radius: 10px;
+}
+
+
+/*footer */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-column {
+  width: 25%;
+}
+
+.footer-column h3 {
+  font-size: 20px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-bottom {
+  background-color: #222;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.cardSlider {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+}
+
+.cardDiv {
+  overflow-x: hidden;
+  transition: transform 0.5s ease;
+
+
 }
